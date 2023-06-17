@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* --------------------------------------- */
+
+:root {
+    /* --main-color: #0249AC; */
+    --main-color: #009688;
+    --second-color: #4BB6AE;
+    --gray-color: #718096;
+}
+/* --------------------------------------- */
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+/* --------------------------------------- */
+
+/* Classes */
+.main-color {
+    color: var(--main-color);
+}
+.main-bg {
+    background-color: var(--main-color);
+}
+.second-color {
+    color: var(--second-color);
+}
+.second-bg {
+    background-color: var(--second-color);
+}
+/* -------------- */
+.gray-color {
+    color: var(--gray-color);
+}
+/* --------------------------------------- */
+
+/* Component */
+.a__active {
+    color: white;
+    background-color: var(--main-color);
+}
+/* --------------------------------------- */
+
+/* Elements */
+
+/* Sidebar */
+.sidebar,
+.toggle-nav {
+    background-color: #FAFAFA;
+}
+
+/* Navbar */
+nav a,
+nav li {
+    transition: 0.5s;
+}
+nav a:hover,
+nav li:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+/* *************** */
+@media (min-width: 1280px) {
+    .page {
+        width: calc(100% - 250px);
+    }
+}

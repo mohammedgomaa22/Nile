@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nile Charity</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <!-- Icon Page -->
+    <link rel="icon" href="./images/logo.PNG">
+</head>
+<body>
+    <div id="app">
+        <!-- ********** Start Sidebar ********** -->
+        <div class="sidebar fixed w-[250px] right-0 h-screen py-11 px-6 flex flex-col items-center duration-500 z-50 ||| translate-x-[0px] xl:translate-x-0">
+            <!-- Toggler -->
+            <div class="toggle-nav main-color xl:hidden absolute -left-[61px] p-1 ml-5 text-4xl cursor-pointer border rounded-se-md rounded-ee-md">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo w-40 h-10 mb-14">
+                <img src="images/logo.PNG" alt="">
+            </div>
+            <!-- Navbar -->
+            <nav class="w-full flex-1 flex flex-col justify-between">
+                <ul class="">
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="a__active w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fas fa-house-user ml-2"></i>
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fa-solid fa-receipt ml-2"></i>
+                            بيانات المنشأة
+                        </a>
+                    </li>
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fa-solid fa-hand-holding-dollar ml-2"></i>
+                            طلبات التبرع
+                        </a>
+                    </li>
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fa-regular fa-credit-card ml-2"></i>
+                            المحفظة
+                        </a>
+                    </li>
+                    <li
+                        class="w-full p-4 relative rounded-xl overflow-hidden font-medium text-sm gray-color cursor-pointer">
+                        <i class="fa-brands fa-nfc-symbol ml-2"></i>
+                        العمليات
+                        <i class="fas fa-angle-down absolute left-4 top-1/2 -translate-y-1/2"></i>
+                        <ul>
+                            <li class="">
+                                <a href="#" class="">
+    
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fa-solid fa-gear ml-2"></i>
+                            الإعدادت
+                        </a>
+                    </li>
+                </ul>
+                <!-- Other Ul -->
+                <ul class="">
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fa-regular fa-circle-question ml-2"></i>
+                            الدعم والمساعدة
+                        </a>
+                    </li>
+                    <li class="rounded-xl overflow-hidden">
+                        <a href="#" class="w-full block p-4 font-medium text-sm gray-color">
+                            <i class="fas fa-arrow-right ml-2"></i>
+                            تسجيل الخروج
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ********** End Sidebar ********** -->
+        <!-- ********** Start Page ********** -->
+        <div class="page w-full absolute left-0 pt-10 pl-5 pb-6 pr-8">
+            <!-- ********** Start Header ********** -->
+            <header class="h-12 mb-14 pr-5 xl:pr-0 flex justify-between items-center overflow-hidden">
+                <div class="title">
+                    <h2 class="font-extrabold text-2xl">الرئيسية</h2>
+                </div>
+                <ul class="flex">
+                    <div
+                        class="search w-12 h-12 ml-4 flex items-center justify-center bg-slate-50 rounded-full text-lg cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div
+                        class="notifications relative w-12 h-12 ml-4 flex items-center justify-center bg-slate-50 rounded-full text-xl cursor-pointer">
+                        <i class="fa-regular fa-bell"></i>
+                        <div class="dot h-2 w-2 absolute top-3 right-3 rounded-full bg-red-500"></div>
+                    </div>
+                    <div class="user flex items-center p-3 rounded-[1000px] bg-slate-50 cursor-pointer">
+                        <div class="avatar ml-2 flex items-center justify-center rounded-full text-2xl">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
+                        <h3 class="font-bold">محمد جمعة</h3>
+                        <i class="fas fa-angle-down mr-8 ml-1 gray-color text-sm"></i>
+                    </div>
+                </ul>
+            </header>
+            <!-- ********** End Header ********** -->
+            <!-- ********** Start Content ********** -->
+            <div class="content flex flex-col lg:flex-row gap-8">
+                <div class="main flex-1">
+                    <!-- Info -->
+                    <div class="info p-8 main-bg rounded-xl overflow-hidden">
+                        <h3 class="text-xl font-bold text-white mb-5">مؤسسة النيل الخيرية</h3>
+                        <div class="row flex justify-between items-end gap-4">
+                            <!-- UL -->
+                            <div class="ul flex-1 flex flex-wrap gap-10 text-sm text-slate-300">
+                                <ul class="mb-5 lg:mb-0">
+                                    <p class="text-sm font-normal mb-6">
+                                        <i class="fa-regular fa-pen-to-square ml-2"></i>
+                                        رقم السجل التجاري : 30 2417 2275
+                                    </p>
+                                    <p class="text-sm font-normal">
+                                        <i class="fa-regular fa-user ml-2"></i>
+                                        إسم المفوض : محمد جمعة زيدان
+                                    </p>
+                                </ul>
+                                <ul>
+                                    <p class="text-sm font-normal mb-6">
+                                        <i class="fa-solid fa-phone-flip ml-2"></i>
+                                        +123 45 6789 888
+                                    </p>
+                                    <p class="text-sm font-normal">
+                                        <i class="fa-regular fa-envelope ml-2"></i>
+                                        mohammedgomaa2522@gmail.com
+                                    </p>
+                                </ul>
+                            </div>
+                            <!-- BTN -->
+                            <button
+                                class="flex items-center justify-center text-sm font-bold main-color bg-white p-3 rounded-xl mr-3">
+                                طلب تمويل
+                                <i class="fas fa-arrow-left mr-3"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Grid -->
+                    <div class="row py-6 grid lg:grid-cols-2 gap-6">
+                        <!-- Box-1 -->
+                        <div class="box h-[170px] p-6 border border-gray-200 rounded-xl">
+                            <div class="head flex justify-between items-center text-sm font-semibold text-gray-600 mb-5">
+                                <h4>طلبات التمويل</h4>
+                                <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                            </div>
+                            <div class="price text-3xl font-bold mb-5">
+                                10
+                                <span class="text-lg text-gray-600"></span>
+                            </div>
+                            <div class="data flex flex-wrap gap-4">
+                                <div class="num text-green-600">
+                                    2,05%
+                                    <i class="fa-solid fa-arrow-trend-up mr-1"></i>
+                                </div>
+                                <div class="date text-sm text-gray-600 font-semibold">
+                                    10 يناير 2023
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Box-2 -->
+                        <div class="box h-[170px] p-6 border border-gray-200 rounded-xl">
+                            <div class="head flex justify-between items-center text-sm font-semibold text-gray-600 mb-5">
+                                <h4>مبلغ التحويل</h4>
+                                <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                            </div>
+                            <div class="price text-3xl font-bold mb-5">
+                                30,476.00
+                                <span class="text-lg text-gray-600">ر.س</span>
+                            </div>
+                            <div class="data flex flex-wrap gap-4">
+                                <div class="num text-green-600">
+                                    2,05%
+                                    <i class="fa-solid fa-arrow-trend-up mr-1"></i>
+                                </div>
+                                <div class="date text-sm text-gray-600 font-semibold">
+                                    10 يناير 2023
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Box-3 -->
+                        <div class="box h-[170px] p-6 border border-gray-200 rounded-xl">
+                            <div class="head flex justify-between items-center text-sm font-semibold text-gray-600 mb-5">
+                                <h4>المبلغ المسدد</h4>
+                                <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                            </div>
+                            <div class="price text-3xl font-bold mb-5">
+                                20,476.00
+                                <span class="text-lg text-gray-600">ر.س</span>
+                            </div>
+                            <div class="data flex flex-wrap gap-4">
+                                <div class="num text-green-600">
+                                    2,05%
+                                    <i class="fa-solid fa-arrow-trend-up mr-1"></i>
+                                </div>
+                                <div class="date text-sm text-gray-600 font-semibold">
+                                    10 يناير 2023
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Box-4 -->
+                        <div class="box h-[170px] p-6 border border-gray-200 rounded-xl">
+                            <div class="head flex justify-between items-center text-sm font-semibold text-gray-600 mb-5">
+                                <h4>الدفعة المتبقية</h4>
+                                <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                            </div>
+                            <div class="price text-3xl font-bold mb-5">
+                                10,000.00
+                                <span class="text-lg text-gray-600">ر.س</span>
+                            </div>
+                            <div class="data flex flex-wrap gap-4">
+                                <div class="num text-green-600">
+                                    2,05%
+                                    <i class="fa-solid fa-arrow-trend-up mr-1"></i>
+                                </div>
+                                <div class="date text-sm text-gray-600 font-semibold">
+                                    10 يناير 2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chart -->
+                    <div class="chart max-w-full p-6 border border-gray-300 rounded-xl">
+                        <div class="head flex justify-center sm:justify-between gap-4 flex-wrap text-lg font-bold mb-5">
+                            <h3>توزيع مبالغ التبرع</h3>
+                            <div class="date">
+                                <select name="months" id="char-months" class="min-w-[100px] cursor-pointer bg-slate-100 text-slate-500 p-1 rounded-3xl">
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                </select>
+                            </div>
+                        </div>
+                        <canvas id="myChart" class="max-w-full"></canvas>
+                    </div>
+                </div>
+                <div class="wallet p-4 h-fit border border-gray-300 rounded-xl">
+                    <div class="head flex justify-between text-lg font-bold mb-5">
+                        <h3>المحفظة</h3>
+                        <i class="fa-solid fa-ellipsis text-gray-500 cursor-pointer"></i>
+                    </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- Visa -->
+                        <div class="visa min-w-[270px] max-w-[350px] h-[196px] rounded-3xl p-4 bg-blue-700 relative overflow-hidden">
+                            <h2 class="text-3xl font-bold text-white" dir="ltr">VISA</h2>
+                            <h4 class="text-lg font-normal text-gray-300">
+                                الرصيد
+                                <i class="fa-regular fa-eye mr-3"></i>
+                            </h4>
+                            <div class="price text-2xl font-bold my-1 text-white">
+                                24,000.55
+                                <span>ر.س</span>
+                            </div>
+                            <p class="text-xs font-medium text-gray-300">رقم حسابك الاستثماري</p>
+                            <div
+                                class="id border border-gray-300 rounded-xl text-sm font-medium py-2 text-center text-gray-300 mt-2">
+                                <i class="fa-regular fa-file-lines ml-10"></i>
+                                SA10 301 0344 5454 545
+                            </div>
+                            <!-- Circle -->
+                            <div class="circle h-48 w-48 absolute top-2 -right-[100px] bg-slate-300 opacity-5 rounded-full">
+                            </div>
+                            <div
+                                class="circle h-48 w-48 absolute -bottom-24 -right-[10px] bg-slate-300 opacity-5 rounded-full">
+                            </div>
+                        </div>
+                        <!-- Bar -->
+                        <div class="bar text-center mb-4">
+                            <div class="w-3 h-1 rounded-xl bg-gray-300 inline-block"></div>
+                            <div class="w-3 h-1 rounded-xl bg-gray-300 inline-block"></div>
+                            <div class="w-6 h-1 rounded-xl main-bg inline-block"></div>
+                        </div>
+                        <!-- Buttons -->
+                        <div class="buttons flex gap-8 justify-center">
+                            <!-- bnt-1 -->
+                            <div class="btn text-center cursor-pointer">
+                                <div
+                                    class="icon h-16 w-16 flex justify-center items-center border-[2px] border-gray-300 rounded-2xl main-color text-2xl">
+                                    <i class="fa-solid fa-file-export"></i>
+                                </div>
+                                <h4 class="text-sm font-medium text-gray-500 mt-5">سحب</h4>
+                            </div>
+                            <!-- bnt-2 -->
+                            <div class="btn text-center cursor-pointer">
+                                <div
+                                    class="icon h-16 w-16 flex justify-center items-center border-[2px] border-gray-300 rounded-2xl main-color text-2xl">
+                                    <i class="fa-solid fa-file-import"></i>
+                                </div>
+                                <h4 class="text-sm font-medium text-gray-500 mt-5">ايداع</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div class="contact p-4 border border-gray-300 rounded-2xl mt-5">
+                        <div class="head text-sm font-bold text-gray-900 flex items-center mb-4">
+                            <i class="fa-solid fa-tachograph-digital ml-4 second-color"></i>
+                            <h4>معلوماتي</h4>
+                        </div>
+                        <div class="chart">
+                            <div class="text flex justify-between items-center text-xs text-gray-400 mb-2">
+                                <p>استكمل البيانات لتقديم طلب التمويل</p>
+                                <span>45%</span>
+                            </div>
+                            <div class="line h-[6px] relative bg-gray-200 rounded-2xl overflow-hidden">
+                                <span class="absolute h-full w-[45%] right-0 top-0 second-bg"></span>
+                            </div>
+                        </div>
+                        <ul class="mt-5">
+                            <li>
+                                <i class="fa-solid fa-circle-check main-color ml-2 mb-3"></i>
+                                تأكيد البريد الإلكتروني
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check main-color ml-2 mb-3"></i>
+                                معلومات الشركة
+                            </li>
+                            <!-- ------------- -->
+                            <li class="cursor-pointer">
+                                <i class="fa-regular fa-square-plus main-color ml-2 mb-3"></i>
+                                إقرار
+                            </li>
+                            <li class="cursor-pointer">
+                                <i class="fa-regular fa-square-plus main-color ml-2 mb-3"></i>
+                                معلومات الإتصال
+                            </li>
+                            <li class="cursor-pointer">
+                                <i class="fa-regular fa-square-plus main-color ml-2 mb-3"></i>
+                                إضافة المعلومات البنكية
+                            </li>
+                            <li class="cursor-pointer">
+                                <i class="fa-regular fa-square-plus main-color ml-2"></i>
+                                إرفاق المستندات
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Data -->
+                    <div class="data p-4 border border-gray-300 rounded-2xl mt-5">
+                        <div class="head text-sm font-bold text-gray-900 flex items-center mb-4">
+                            <i class="fa-regular fa-user ml-4 second-color"></i>
+                            <h4>المستشار</h4>
+                        </div>
+                        <ul class="mt-5">
+                            <li>
+                                <i class="fa-regular fa-user main-color ml-2 mb-3"></i>
+                                محمد جمعة زيدان
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope main-color ml-2 mb-3"></i>
+                                mohammed@gmail.com
+                            </li>
+                            <li class="cursor-pointer">
+                                <i class="fa-solid fa-phone-flip main-color ml-2 mb-3"></i>
+                                +996 45 2980 777
+                            </li>
+                            <li class="cursor-pointer">
+                                <i class="fa-regular fa-calendar main-color ml-2 mb-3"></i>
+                                بتاريخ 23-01-2023 عند 10:00 صباحاً
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ********** End Content ********** -->
+        </div>
+        <!-- ********** End Page ********** -->
+    </div>
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
