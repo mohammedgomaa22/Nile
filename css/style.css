@@ -1,11 +1,12 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* --------------------------------------- */
 
 :root {
-    /* --main-color: #0249AC; */
-    --main-color: #009688;
+    --main-color: #0249AC;
+    /* --main-color: #009688; */
     --second-color: #4BB6AE;
     --gray-color: #718096;
 }
@@ -13,6 +14,16 @@
 
 body {
     font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
 }
 /* --------------------------------------- */
 

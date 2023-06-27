@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nile Charity</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <!-- CSS file -->
+    <link href="./dist/output.css" rel="stylesheet">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
-    <!-- Icon Page -->
-    <link rel="icon" href="./images/logo.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="./img/logo.PNG">
 </head>
 <body>
     <div id="app">
         <!-- ********** Start Sidebar ********** -->
-        <div class="sidebar fixed w-[250px] right-0 h-screen py-11 px-6 flex flex-col items-center duration-500 z-50 ||| translate-x-[0px] xl:translate-x-0">
+        <div class="sidebar fixed w-[250px] right-0 h-screen py-11 px-6 flex flex-col items-center duration-500 z-50 ||| translate-x-[250px] xl:translate-x-0">
             <!-- Toggler -->
-            <div class="toggle-nav main-color xl:hidden absolute -left-[61px] p-1 ml-5 text-4xl cursor-pointer border rounded-se-md rounded-ee-md">
+            <div class="toggle-nav main-color xl:hidden absolute -left-[56px] p-1 ml-5 text-3xl cursor-pointer border rounded-se-md rounded-ee-md">
                 <i class="fas fa-bars"></i>
             </div>
             <!-- Logo -->
             <div class="logo w-40 h-10 mb-14">
-                <img src="images/logo.PNG" alt="">
+                <img src="./img/logo.PNG" alt="">
             </div>
             <!-- Navbar -->
             <nav class="w-full flex-1 flex flex-col justify-between">
@@ -95,11 +94,11 @@
         <!-- ********** Start Page ********** -->
         <div class="page w-full absolute left-0 pt-10 pl-5 pb-6 pr-8">
             <!-- ********** Start Header ********** -->
-            <header class="h-12 mb-14 pr-5 xl:pr-0 flex justify-between items-center overflow-hidden">
-                <div class="title">
+            <header class="sm:h-12 mb-14 pr-5 xl:pr-0 flex gap-6 flex-col-reverse sm:flex-row justify-between items-center overflow-hidden">
+                <div class="title self-start sm:self-baseline">
                     <h2 class="font-extrabold text-2xl">الرئيسية</h2>
                 </div>
-                <ul class="flex">
+                <ul class="flex self-end sm:self-baseline">
                     <div
                         class="search w-12 h-12 ml-4 flex items-center justify-center bg-slate-50 rounded-full text-lg cursor-pointer">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -113,7 +112,7 @@
                         <div class="avatar ml-2 flex items-center justify-center rounded-full text-2xl">
                             <i class="fa-regular fa-circle-user"></i>
                         </div>
-                        <h3 class="font-bold">محمد جمعة</h3>
+                        <h3 class="font-bold text-sm sm:text-lg">محمد جمعة</h3>
                         <i class="fas fa-angle-down mr-8 ml-1 gray-color text-sm"></i>
                     </div>
                 </ul>
@@ -125,9 +124,9 @@
                     <!-- Info -->
                     <div class="info p-8 main-bg rounded-xl overflow-hidden">
                         <h3 class="text-xl font-bold text-white mb-5">مؤسسة النيل الخيرية</h3>
-                        <div class="row flex justify-between items-end gap-4">
+                        <div class="row flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                             <!-- UL -->
-                            <div class="ul flex-1 flex flex-wrap gap-10 text-sm text-slate-300">
+                            <div class="ul flex-1 flex flex-wrap gap-4 sm:gap-10 text-sm text-slate-300">
                                 <ul class="mb-5 lg:mb-0">
                                     <p class="text-sm font-normal mb-6">
                                         <i class="fa-regular fa-pen-to-square ml-2"></i>
@@ -143,7 +142,7 @@
                                         <i class="fa-solid fa-phone-flip ml-2"></i>
                                         +123 45 6789 888
                                     </p>
-                                    <p class="text-sm font-normal">
+                                    <p class="text-xs sm:text-sm font-normal">
                                         <i class="fa-regular fa-envelope ml-2"></i>
                                         mohammedgomaa2522@gmail.com
                                     </p>
@@ -151,7 +150,7 @@
                             </div>
                             <!-- BTN -->
                             <button
-                                class="flex items-center justify-center text-sm font-bold main-color bg-white p-3 rounded-xl mr-3">
+                                class="flex items-center justify-center text-sm font-bold main-color bg-white p-3 rounded-xl sm:mr-3">
                                 طلب تمويل
                                 <i class="fas fa-arrow-left mr-3"></i>
                             </button>
@@ -337,28 +336,28 @@
                             </div>
                         </div>
                         <ul class="mt-5">
-                            <li>
-                                <i class="fa-solid fa-circle-check main-color ml-2 mb-3"></i>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-circle-check main-color ml-2"></i>
                                 تأكيد البريد الإلكتروني
                             </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check main-color ml-2 mb-3"></i>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-circle-check main-color ml-2"></i>
                                 معلومات الشركة
                             </li>
                             <!-- ------------- -->
-                            <li class="cursor-pointer">
-                                <i class="fa-regular fa-square-plus main-color ml-2 mb-3"></i>
+                            <li class="cursor-pointer mb-3">
+                                <i class="fa-regular fa-square-plus main-color ml-2"></i>
                                 إقرار
                             </li>
-                            <li class="cursor-pointer">
-                                <i class="fa-regular fa-square-plus main-color ml-2 mb-3"></i>
+                            <li class="cursor-pointer mb-3">
+                                <i class="fa-regular fa-square-plus main-color ml-2"></i>
                                 معلومات الإتصال
                             </li>
-                            <li class="cursor-pointer">
-                                <i class="fa-regular fa-square-plus main-color ml-2 mb-3"></i>
+                            <li class="cursor-pointer mb-3">
+                                <i class="fa-regular fa-square-plus main-color ml-2"></i>
                                 إضافة المعلومات البنكية
                             </li>
-                            <li class="cursor-pointer">
+                            <li class="cursor-pointer mb-3">
                                 <i class="fa-regular fa-square-plus main-color ml-2"></i>
                                 إرفاق المستندات
                             </li>
@@ -371,20 +370,20 @@
                             <h4>المستشار</h4>
                         </div>
                         <ul class="mt-5">
-                            <li>
-                                <i class="fa-regular fa-user main-color ml-2 mb-3"></i>
+                            <li class="mb-3">
+                                <i class="fa-regular fa-user main-color ml-2"></i>
                                 محمد جمعة زيدان
                             </li>
-                            <li>
-                                <i class="fa-regular fa-envelope main-color ml-2 mb-3"></i>
+                            <li class="mb-3">
+                                <i class="fa-regular fa-envelope main-color ml-2"></i>
                                 mohammed@gmail.com
                             </li>
-                            <li class="cursor-pointer">
-                                <i class="fa-solid fa-phone-flip main-color ml-2 mb-3"></i>
+                            <li class="cursor-pointer mb-3">
+                                <i class="fa-solid fa-phone-flip main-color ml-2"></i>
                                 +996 45 2980 777
                             </li>
-                            <li class="cursor-pointer">
-                                <i class="fa-regular fa-calendar main-color ml-2 mb-3"></i>
+                            <li class="cursor-pointer mb-3 text-sm">
+                                <i class="fa-regular fa-calendar main-color ml-2 text-base"></i>
                                 بتاريخ 23-01-2023 عند 10:00 صباحاً
                             </li>
                         </ul>
@@ -395,8 +394,9 @@
         </div>
         <!-- ********** End Page ********** -->
     </div>
-    <!-- JS -->
+    <!-- JS Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./js/all.min.js"></script>
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>

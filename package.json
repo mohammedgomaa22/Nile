@@ -1,9 +1,5 @@
 {
-    "devDependencies": {
-        "parcel": "^2.6.2"
-    },
-    "dependencies": {
-        "@cubejs-client/core": "^0.31.0",
-        "chart.js": "^4.3.0"
-    }
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
 }

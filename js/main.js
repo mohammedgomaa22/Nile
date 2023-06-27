@@ -47,7 +47,7 @@ new Chart("myChart", {
     data: {
         labels: xValues,
         datasets: [{
-        backgroundColor:"#009688",
+        backgroundColor:"#0249AC",
         borderColor: "rgba(0,0,255,0.1)",
         data: yValues
         }]
